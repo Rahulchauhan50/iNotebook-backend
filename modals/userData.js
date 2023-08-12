@@ -5,6 +5,8 @@ const DataSchema = mongoose.Schema({
         type:mongoose.Schema.Types.ObjectId,
         ref:'user',
     },
+    folders:[],
+    notes:[]
 })
 
 const Data = mongoose.model('data',DataSchema)
